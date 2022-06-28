@@ -17,7 +17,6 @@ bool isPalindrome(string palindromeCandidate){
     for(int i=0;i<palindromeCandidate.length();i++){
         if(charArray[i] != charArray[palindromeCandidate.length()-i-1]){
             flag= false;
-            cout<<charArray[i]<<" "<< charArray[palindromeCandidate.length()-i-1] <<"error"<<endl;
             break;
         }
     }
