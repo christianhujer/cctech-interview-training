@@ -32,11 +32,15 @@ bool isPalindrome(const std::string& palindromeCandidate){
 int main(int argc, char* argv[]){
     if(argc == 2){
         std::string palindromeCandidate = argv[1];
-        std::cout << !isPalindrome(palindromeCandidate) << std::endl;
+        bool isCandidatePalindrome = isPalindrome(palindromeCandidate); 
+        std::cout << !isCandidatePalindrome << std::endl;
+        if(isCandidatePalindrome)
+            return EXIT_SUCCESS;
+        else
+            return EXIT_FAILURE;
     }
-    else
+    else{
         std::cerr << "Wrong number of arguments" << std::endl;
-
-
-    return EXIT_SUCCESS;
+        return EXIT_FAILURE;
+    }
 }
