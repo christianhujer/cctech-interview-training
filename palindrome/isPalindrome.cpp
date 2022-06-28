@@ -4,8 +4,7 @@
 #include <iostream>
 
 void convertToLowerCase(std::string& word){
-    for(int i = 0; i < word.length(); ++i)
-        word[i] = tolower(word[i]);
+    std::transform(word.begin(), word.end(), word.begin(), tolower);
 }
 
 void removePunctuation(std::string& word){
