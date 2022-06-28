@@ -28,9 +28,8 @@ int main(int argc, char* argv[]){
     string Candidate;
    if (argc != 2)
     {
-        cerr << "error :" << argv[0] << endl;
-        exit(0);
-    }
+         cerr << "error : Wrong number of Argument" << endl;
+        return EXIT_FAILURE;
     else
     {
 
